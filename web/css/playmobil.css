@@ -8,7 +8,7 @@ span.logo {
 }
 
 div.header img {
-  padding-top: 10px;
+  padding-top: 5px;
   vertical-align: middle;
 }
 
@@ -20,7 +20,7 @@ img.globocom-logo {
 
 .navbar-inner {
   background-image: linear-gradient(to bottom, #860F00, #860F00);
-  min-height: 82px;
+  min-height: 68px;
   border: 0px;
   border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -190,4 +190,80 @@ img.footer-logo {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 11px;
   -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+}
+
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px;
+}
+
+#push,
+#footer {
+  height: 60px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+.title-group {
+  color: #585858;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.padding-top-group-title{
+  padding-top: 10px;
+}
+
+.bitrates{
+  margin-top: 10px;
+}
+
+.btn-add-bitrate{
+  margin-bottom: 10px;
+}
+
+.encoder-input-controls{
+  margin-left: 15px;
+}
+
+.encoder-group-input{
+  padding-top: 20px;
+}
+
+.show-advanced{
+  font-size: 10px;
+}
+
+tbody {
+  vertical-align: top;
+}
+
+.playmobil-content {
+  padding-left: 25px;
 }

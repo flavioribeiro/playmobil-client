@@ -24,18 +24,103 @@
     </div>
 
     <div class="container-fluid">
+
       <div class="row-fluid">
         <div class="span12">
           <h1>SIGNAL</h1>
         </div>
       </div>
+      <div class="well playmobil-well">
 
-    <video autoplay controls width=320 height=240>
-    <source src="http://10.2.10.50:8080" type="video/ogg">
-       You browser doesn't support element <code>video</code>.
-    </video>
+        <table>
+          <tr>
+            <td>
+              <video autoplay controls width=320 height=240>
+              <source src="http://10.2.10.50:8080" type="video/ogg">
+                 You browser doesn't support element <code>video</code>.
+              </video>
+            </td>
+            <td class="playmobil-content">
 
+              <div class="control-group">
+                <span class="control-label title-group">Video</span>
+                <div class="controls form-inline padding-top-group-title encoder-input-controls row">
+                  <div class="span3">
+                    <label for="video-input">Device</label>
+                    <select id="video-input" class="input-medium">
+                      <option value="1">/dev/video0</option>
+                      <option value="1">/dev/video1</option>
+                    </select>
+                  </div>
+                  <div class="span3">
+                    <label for="video-input">Framerate</label>
+                    <select id="video-input" class="input-mini">
+                      <option value="1">30</option>
+                      <option value="1">29.97</option>
+                      <option value="1">15</option>
+                    </select>
+                  </div>
+                  <div class="span3">
+                    <label for="video-input">Bitrate</label>
+                    <input type="text" class="input-mini"></input>Kbps
+                  </div>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <span class="control-label title-group">Audio</span>
+                <div class="controls form-inline padding-top-group-title encoder-input-controls row">
+                  <div class="span3">
+                    <label for="video-input">Device</label>
+                    <select id="video-input" class="input-medium">
+                      <option value="1">External Microphone</option>
+                    </select>
+                  </div>
+                  <div class="span3">
+                    <label for="video-input">Channels</label>
+                    <select id="video-input" class="input-medium">
+                      <option value="1">Stereo</option>
+                      <option value="1">Mono</option>
+                    </select>
+                  </div>
+                  <div class="span3">
+                    <label for="video-input">Bitrate</label>
+                    <input type="text" class="input-mini"></input>Kbps
+                  </div>
+                </div>
+              </div>
+
+              <div class="control-group">
+                <div class="span8" align=center><br><br>
+                  <button type="submit" class="btn btn-danger btn-large">Publish</button>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="row-fluid">
+        <div class="span12">
+          <h4>Encoding Logs</h4>
+        </div>
+      </div>
+
+      <div class="well playmobil-well">
+
+Tue Dec 02 2014 11:17:21 : Selected video input device: FaceTime HD Camera (Built-in)<br>
+Tue Dec 02 2014 11:17:21 : Selected audio input device: External microphone<br>
+Tue Dec 02 2014 11:17:21 : Profile Warnings : 1. Audio device in profile Internal microphone is busy or not connected to the system. Changing to device External microphone.
+      </div>
     </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
     <div class="navbar navbar-static-bottom">
       <div class="footer navbar-inner">
         <div class="container-fluid">
