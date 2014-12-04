@@ -1,0 +1,56 @@
+
+ body { padding-top: 100px; }
+
+ .navbar-header {
+   height: 80px;
+ }
+
+ .navbar-playmobil {
+   background-color: #8b0427;
+   border-color: #12583a;
+ }
+
+ .navbar-text {
+   color: white;
+   font-size: 35px;
+   margin-top: 30px;
+ }
+
+ .navbar-link {
+   color: white;
+ }
+
+ .navbar-footer {
+   margin-top: 16px;
+   color: white;
+ }
+
+ .footer {
+  min-height: 42px;
+}
+
+.footer-text {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.footer-text-right {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  -webkit-font-smoothing: antialiased;
+  float: right;
+}
+
+.footer-text-right a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar-text-playmobil {
+  margin-top: 15px;
+}
