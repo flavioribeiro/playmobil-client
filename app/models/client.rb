@@ -20,7 +20,7 @@ class Client
     raise "'tcpserversink' gstreamer plugin missing" if tcpserversink.nil?
 
     tcpserversink.host = '0.0.0.0'
-    tcpserversink.port = '8080'
+    tcpserversink.port = 8080
 
     # add objects to the main pipeline
     bin << videotestsrc << theoraenc << oggmux << tcpserversink
