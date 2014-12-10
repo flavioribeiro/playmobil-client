@@ -3,7 +3,16 @@ PlaymobilClient::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'client#index'
+  root 'video_signals#index'
+
+  resources :video_signals
+
+  get "/player/:id" => 'video_signals#player'
+
+  mount Resque::Server.new, at: "/resque"
+
+  post "/api/video" => "api/video#index"
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

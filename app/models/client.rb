@@ -1,7 +1,7 @@
 require "gst"
 
 class Client
-  def self.run
+  def self.run(client_id)
     Gst.init
 
     bin = Gst::Pipeline.new("client")
