@@ -1,6 +1,7 @@
 class VideoSignalsController < ApplicationController
 
   def player
+    set_video_signal
   end
 
   def index
@@ -16,10 +17,11 @@ class VideoSignalsController < ApplicationController
   def create
     @video_signal = VideoSignal.new
     @video_signal.name = video_signal_params[:name]
+    @video_signal.port = video_signal_params[:port]
 
     respond_to do |format|
       if @video_signal.save
-        Resque.enqueue(StartIngest, @video_signal.id)
+        Resque.enqueue(StartIngest, @video_signal.id.to_s)
         format.html { redirect_to "/player/"+ @video_signal.id, notice: 'Video client was successfully created.' }
         format.json { render action: 'player', status: :created, location: @video_signal }
       else
@@ -37,7 +39,7 @@ class VideoSignalsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def video_signal_params
-    params.require(:video_signal).permit(:name)
+    params.require(:video_signal).permit(:name, :port)
   end
 
 end

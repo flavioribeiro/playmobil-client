@@ -19,8 +19,9 @@ class Client
     tcpserversink = Gst::ElementFactory.make("tcpserversink", "serversink")
     raise "'tcpserversink' gstreamer plugin missing" if tcpserversink.nil?
 
+    @video_signal = VideoSignal.find(client_id)
     tcpserversink.host = '0.0.0.0'
-    tcpserversink.port = 8080
+    tcpserversink.port = @video_signal.port
 
     # add objects to the main pipeline
     bin << videotestsrc << theoraenc << oggmux << tcpserversink
