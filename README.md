@@ -3,5 +3,5 @@ playmobil-client
 
 Hipster alternative to Flash Media Live Encoder (FMLE)
 
+![Playmobil Client](https://cloud.githubusercontent.com/assets/244265/5394763/6f593982-8128-11e4-847c-b743163f29af.png)
 
-![Playmobil Client](https://photos-5.dropbox.com/t/1/AADynoW-lk_4P2LRMrLw1F2MlFwIbL6TmjRWd82iSi1iyQ/12/6159957/png/1024x768/3/1417543200/0/2/Screenshot%202014-12-02%2014.11.44.png/sI0oFOH6iyxSEl1vMpOo3OP5ocOFItLJgxBqZXTzXPU)
